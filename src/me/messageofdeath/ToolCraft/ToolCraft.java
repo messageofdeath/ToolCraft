@@ -96,18 +96,98 @@ public class ToolCraft extends JavaPlugin {
 	
 	public void loadAxes() {
 		// Wood Axe
-		ShapedRecipe woodaxe = new ShapedRecipe(new ItemStack(Material.WOOD_AXE, 5));
+		ShapedRecipe woodaxe = new ShapedRecipe(new ItemStack(Material.WOOD, 2));
 		woodaxe.shape(new String[] {"A"});
 		woodaxe.setIngredient('A', Material.WOOD_AXE);
 		addRecipe(woodaxe);
+		
+		// Stone Axe
+		ShapedRecipe stoneaxe = new ShapedRecipe(new ItemStack(Material.STONE, 2));
+		stoneaxe.shape(new String[] {"A"});
+		stoneaxe.setIngredient('A', Material.STONE_AXE);
+		addRecipe(stoneaxe);
+		
+		// Iron Axe
+		ShapedRecipe ironaxe = new ShapedRecipe(new ItemStack(Material.IRON_INGOT, 2));
+		ironaxe.shape(new String[] {"A"});
+		ironaxe.setIngredient('A', Material.IRON_AXE);
+		addRecipe(ironaxe);
+		
+		// Gold Axe
+		ShapedRecipe goldaxe = new ShapedRecipe(new ItemStack(Material.GOLD_INGOT, 2));
+		goldaxe.shape(new String[] {"A"});
+		goldaxe.setIngredient('A', Material.GOLD_AXE);
+		addRecipe(goldaxe);
+		
+		// Diamond Axe
+		ShapedRecipe diamondaxe = new ShapedRecipe(new ItemStack(Material.DIAMOND, 2));
+		diamondaxe.shape(new String[] {"A"});
+		diamondaxe.setIngredient('A', Material.DIAMOND_AXE);
+		addRecipe(diamondaxe);
 	}
 	
 	public void loadShovels() {
+		// Wood Shovel
+		ShapedRecipe woodshovel = new ShapedRecipe(new ItemStack(Material.WOOD, 1));
+		woodshovel.shape(new String[] {"A"});
+		woodshovel.setIngredient('A', Material.WOOD_SPADE);
+		addRecipe(woodshovel);
 		
+		// Stone Shovel
+		ShapedRecipe stoneshovel = new ShapedRecipe(new ItemStack(Material.STONE, 1));
+		stoneshovel.shape(new String[] {"A"});
+		stoneshovel.setIngredient('A', Material.STONE_SPADE);
+		addRecipe(stoneshovel);
+		
+		// Iron Shovel
+		ShapedRecipe ironshovel = new ShapedRecipe(new ItemStack(Material.IRON_INGOT, 1));
+		ironshovel.shape(new String[] {"A"});
+		ironshovel.setIngredient('A', Material.IRON_SPADE);
+		addRecipe(ironshovel);
+		
+		// Gold Shovel
+		ShapedRecipe goldshovel = new ShapedRecipe(new ItemStack(Material.GOLD_INGOT, 1));
+		goldshovel.shape(new String[] {"A"});
+		goldshovel.setIngredient('A', Material.GOLD_SPADE);
+		addRecipe(goldshovel);
+		
+		// Diamond Shovel
+		ShapedRecipe diamondshovel = new ShapedRecipe(new ItemStack(Material.DIAMOND, 1));
+		diamondshovel.shape(new String[] {"A"});
+		diamondshovel.setIngredient('A', Material.DIAMOND_SPADE);
+		addRecipe(diamondshovel);
 	}
 	
 	public void loadSwords() {
+		// Wood Sword
+		ShapedRecipe woodsword = new ShapedRecipe(new ItemStack(Material.WOOD, 1));
+		woodsword.shape(new String[] {"A"});
+		woodsword.setIngredient('A', Material.WOOD_SWORD);
+		addRecipe(woodsword);
 		
+		// Stone Sword
+		ShapedRecipe stonesword = new ShapedRecipe(new ItemStack(Material.STONE, 1));
+		stonesword.shape(new String[] {"A"});
+		stonesword.setIngredient('A', Material.STONE_SWORD);
+		addRecipe(stonesword);
+		
+		// Iron Sword
+		ShapedRecipe ironsword = new ShapedRecipe(new ItemStack(Material.IRON_INGOT, 1));
+		ironsword.shape(new String[] {"A"});
+		ironsword.setIngredient('A', Material.IRON_SWORD);
+		addRecipe(ironsword);
+		
+		// Gold Sword
+		ShapedRecipe goldsword = new ShapedRecipe(new ItemStack(Material.GOLD_INGOT, 1));
+		goldsword.shape(new String[] {"A"});
+		goldsword.setIngredient('A', Material.GOLD_SWORD);
+		addRecipe(goldsword);
+		
+		// Diamond Sword
+		ShapedRecipe diamondsword = new ShapedRecipe(new ItemStack(Material.DIAMOND, 1));
+		diamondsword.shape(new String[] {"A"});
+		diamondsword.setIngredient('A', Material.DIAMOND_SWORD);
+		addRecipe(diamondsword);
 	}
 	
 	public void addRecipe(ShapedRecipe recipe) {
